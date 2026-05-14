@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SJ Stance Custom Wheels</title>
+    <meta
+      name="description"
+      content="Premium custom wheels, fitment guidance, and visualizer tools for enthusiast builds."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#home" aria-label="SJ Stance Custom Wheels home">
+          <span class="brand-mark">SJ</span><span class="brand-name">stance</span>
+          <span class="brand-subtitle">CUSTOM WHEELS</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-line nav-line-one"></span>
+          <span class="nav-line nav-line-two"></span>
+          <span class="nav-line nav-line-three"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a class="active" href="#home">Home</a>
+          <a href="#shop">Shop Wheels</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#visualizer">Visualizer</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button" id="search-open" type="button" aria-label="Search">
+            <span class="search-icon"></span>
+          </button>
+          <button class="icon-button cart-button" id="cart-open" type="button" aria-label="Open cart">
+            <span class="cart-icon"></span>
+            <span class="cart-count" data-cart-count>0</span>
+          </button>
+          <a class="button button-primary header-quote" href="#quote">Get a Quote</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section-band" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Precision fitment. Premium finishes.</p>
+            <h1 id="hero-title">
+              Premium <span>Custom Wheels</span> For Every Build
+            </h1>
+            <p class="hero-text">
+              Vehicle-specific fitment, curated wheel brands, and expert guidance for stance,
+              track, and daily-driven builds.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#shop">Browse Wheels</a>
+              <a class="button button-secondary" href="#visualizer">Try Visualizer</a>
+            </div>
+          </div>
+
+          <div class="hero-media" role="img" aria-label="Black performance coupe on custom wheels"></div>
+        </div>
+      </section>
+
+      <section class="value-strip" aria-label="Service highlights">
+        <div class="shell value-grid">
+          <article>
+            <span class="line-icon target-icon"></span>
+            <div>
+              <h2>Custom Fitment</h2>
+              <p>Built for your vehicle</p>
+            </div>
+          </article>
+          <article>
+            <span class="line-icon shield-icon"></span>
+            <div>
+              <h2>Premium Brands</h2>
+              <p>Top quality you can trust</p>
+            </div>
+          </article>
+          <article>
+            <span class="line-icon truck-icon"></span>
+            <div>
+              <h2>Fast Shipping</h2>
+              <p>Quick, reliable delivery</p>
+            </div>
+          </article>
+          <article>
+            <span class="line-icon support-icon"></span>
+            <div>
+              <h2>Expert Support</h2>
+              <p>We are here to help</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="shop-section section-band" id="shop" aria-labelledby="shop-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">Shop by style</p>
+            <h2 id="shop-title">Find the stance that fits your build</h2>
+          </div>
+
+          <div class="style-grid">
+            <button class="style-card is-active" type="button" data-style-filter="all">
+              <span class="style-media media-concave"></span>
+              <span class="style-body">
+                <strong>All Styles</strong>
+                <span>Browse every premium fitment option.</span>
+              </span>
+            </button>
+            <button class="style-card" type="button" data-style-filter="forged">
+              <span class="style-media media-forged"></span>
+              <span class="style-body">
+                <strong>Forged</strong>
+                <span>Lightweight strength for serious builds.</span>
+              </span>
+            </button>
+            <button class="style-card" type="button" data-style-filter="mesh">
+              <span class="style-media media-mesh"></span>
+              <span class="style-body">
+                <strong>Mesh</strong>
+                <span>Intricate spoke detail with timeless presence.</span>
+              </span>
+            </button>
+            <button class="style-card" type="button" data-style-filter="deep-dish">
+              <span class="style-media media-dish"></span>
+              <span class="style-body">
+                <strong>Deep Dish</strong>
+                <span>Bold lip depth and show-ready fitment.</span>
+              </span>
+            </button>
+            <button class="style-card" type="button" data-style-filter="performance">
+              <span class="style-media media-performance"></span>
+              <span class="style-body">
+                <strong>Performance</strong>
+                <span>Track-ready design built to respond.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="shop-tools" aria-label="Wheel catalog filters">
+            <label>
+              <span>Search</span>
+              <input id="catalog-search" type="search" placeholder="Search wheels, finish, fitment">
+            </label>
+            <label>
+              <span>Diameter</span>
+              <select id="diameter-filter">
+                <option value="all">All sizes</option>
+                <option value="18">18 inch</option>
+                <option value="19">19 inch</option>
+                <option value="20">20 inch</option>
+                <option value="21">21 inch</option>
+              </select>
+            </label>
+            <label>
+              <span>Finish</span>
+              <select id="finish-filter">
+                <option value="all">All finishes</option>
+                <option value="gloss-black">Gloss black</option>
+                <option value="brushed-silver">Brushed silver</option>
+                <option value="bronze">Bronze</option>
+                <option value="machined">Machined</option>
+              </select>
+            </label>
+            <button class="button button-secondary button-small" id="reset-filters" type="button">Reset</button>
+          </div>
+
+          <div class="catalog-status" id="catalog-status" aria-live="polite"></div>
+          <div class="product-grid" id="product-grid" aria-label="Wheel products"></div>
+        </div>
+      </section>
+
+      <section class="visualizer section-band" id="visualizer" aria-labelledby="visualizer-title">
+        <div class="shell visualizer-panel">
+          <div class="visualizer-stage">
+            <div class="canvas-toolbar">
+              <label class="upload-badge" for="car-upload">Upload Your Car</label>
+              <div class="placement-tools" aria-label="Wheel placement tools">
+                <button class="tool-button is-active" type="button" data-placement-mode="front">Set Front</button>
+                <button class="tool-button" type="button" data-placement-mode="rear">Set Rear</button>
+              </div>
+            </div>
+            <input class="file-input" id="car-upload" type="file" accept="image/*">
+            <canvas
+              class="visualizer-canvas"
+              id="visualizer-canvas"
+              width="1100"
+              height="620"
+              aria-label="Wheel visualizer canvas"
+            ></canvas>
+            <div class="wheel-picker" aria-label="Wheel style options">
+              <button class="wheel-option is-active" type="button" data-wheel="forged" aria-label="Select split five spoke wheel"></button>
+              <button class="wheel-option" type="button" data-wheel="concave" aria-label="Select multi spoke wheel"></button>
+              <button class="wheel-option" type="button" data-wheel="mesh" aria-label="Select mesh wheel"></button>
+              <button class="wheel-option" type="button" data-wheel="deep-dish" aria-label="Select deep dish wheel"></button>
+              <button class="wheel-option" type="button" data-wheel="performance" aria-label="Select track wheel"></button>
+            </div>
+          </div>
+
+          <div class="visualizer-copy">
+            <p class="eyebrow">See it. Love it. Build it.</p>
+            <h2 id="visualizer-title">Virtual Wheel Visualizer</h2>
+            <p>
+              Upload a photo of your car, compare wheel styles, and get a cleaner idea of
+              size, finish, and offset before ordering.
+            </p>
+            <div class="feature-list">
+              <span>Realistic preview</span>
+              <span>Finish comparison</span>
+              <span>Save and share</span>
+            </div>
+            <div class="visualizer-controls">
+              <label>
+                <span>Wheel Size</span>
+                <input id="wheel-size" type="range" min="58" max="190" value="118">
+                <output id="wheel-size-output">118 px</output>
+              </label>
+              <label>
+                <span>Rear Scale</span>
+                <input id="rear-wheel-scale" type="range" min="70" max="120" value="96">
+                <output id="rear-wheel-scale-output">96%</output>
+              </label>
+              <label>
+                <span>Rotation</span>
+                <input id="wheel-rotation" type="range" min="-180" max="180" value="0">
+                <output id="wheel-rotation-output">0 deg</output>
+              </label>
+              <label>
+                <span>Opacity</span>
+                <input id="wheel-opacity" type="range" min="45" max="100" value="96">
+                <output id="wheel-opacity-output">96%</output>
+              </label>
+              <label>
+                <span>Cover Stock</span>
+                <input id="wheel-cover" type="range" min="0" max="100" value="70">
+                <output id="wheel-cover-output">70%</output>
+              </label>
+              <label>
+                <span>Fit Angle</span>
+                <input id="wheel-perspective" type="range" min="70" max="110" value="100">
+                <output id="wheel-perspective-output">100%</output>
+              </label>
+            </div>
+            <div class="visualizer-actions">
+              <button class="button button-secondary" id="save-visualizer" type="button">Save Setup</button>
+              <button class="button button-primary" id="export-visualizer" type="button">Export Preview</button>
+              <a class="button button-secondary" href="#quote">Request Quote</a>
+            </div>
+            <p class="inline-status" id="visualizer-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section-band" id="gallery" aria-labelledby="gallery-title">
+        <div class="shell">
+          <div class="gallery-header">
+            <div>
+              <p class="eyebrow">Built different. Driven everywhere.</p>
+              <h2 id="gallery-title">Customer builds and wheel details</h2>
+            </div>
+            <a class="button button-small button-secondary" href="#contact">View Gallery</a>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item gallery-one">
+              <figcaption>Street fitment</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-two">
+              <figcaption>Forged detail</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-three">
+              <figcaption>Euro build</figcaption>
+            </figure>
+            <figure class="gallery-item gallery-four">
+              <figcaption>Mesh closeup</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits section-band" id="about" aria-label="Why choose SJ Stance">
+        <div class="shell benefits-grid">
+          <article>
+            <span class="benefit-icon">01</span>
+            <h2>Custom Fitment</h2>
+            <p>Wheel specs engineered around your chassis, tire size, ride height, and goals.</p>
+          </article>
+          <article>
+            <span class="benefit-icon">02</span>
+            <h2>Premium Brands</h2>
+            <p>Curated manufacturers selected for finish quality, strength, and consistency.</p>
+          </article>
+          <article>
+            <span class="benefit-icon">03</span>
+            <h2>Expert Guidance</h2>
+            <p>Real support for offset, brake clearance, rubbing risk, and final setup.</p>
+          </article>
+          <article>
+            <span class="benefit-icon">04</span>
+            <h2>Fast Support</h2>
+            <p>Quick responses from people who understand custom wheel fitment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section-band" aria-labelledby="reviews-title">
+        <div class="shell">
+          <div class="section-heading align-left">
+            <p class="eyebrow">Trusted by enthusiasts</p>
+            <h2 id="reviews-title">Fitment stories from real builds</h2>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="rating" aria-label="Five out of five rating">5.0</div>
+              <p>The quality and fitment were perfect. SJ Stance helped me choose the right specs and the car sits exactly how I wanted.</p>
+              <strong>Daniel R. <span>BMW M4</span></strong>
+            </article>
+            <article class="review-card">
+              <div class="rating" aria-label="Five out of five rating">5.0</div>
+              <p>Fast shipping, sharp communication, and a clean wheel package that cleared my brakes without drama.</p>
+              <strong>Mike T. <span>Audi S5</span></strong>
+            </article>
+            <article class="review-card">
+              <div class="rating" aria-label="Five out of five rating">5.0</div>
+              <p>The visualizer made it easy to compare finishes before ordering. The final setup matched the preview closely.</p>
+              <strong>Alex P. <span>Civic Type R</span></strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-cta" id="quote" aria-labelledby="quote-title">
+        <div class="shell quote-inner">
+          <div>
+            <p class="eyebrow">Ready to build your perfect setup?</p>
+            <h2 id="quote-title">Get a personalized wheel quote</h2>
+          </div>
+          <a class="button button-primary" href="#quote-form">Get Your Quote</a>
+        </div>
+        <form class="quote-form shell" id="quote-form">
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>Phone</span>
+              <input name="phone" type="tel" autocomplete="tel">
+            </label>
+            <label>
+              <span>Vehicle Year</span>
+              <input name="year" inputmode="numeric" placeholder="2024" required>
+            </label>
+            <label>
+              <span>Make</span>
+              <input name="make" placeholder="BMW" required>
+            </label>
+            <label>
+              <span>Model / Trim</span>
+              <input name="model" placeholder="M4 Competition" required>
+            </label>
+            <label class="full-field">
+              <span>Build Notes</span>
+              <textarea name="notes" rows="4" placeholder="Desired wheel style, finish, ride height, tire size, brake kit, or rubbing concerns."></textarea>
+            </label>
+          </div>
+          <div class="quote-summary">
+            <p id="quote-cart-summary">No cart items selected yet.</p>
+            <button class="button button-primary" type="submit">Submit Quote Request</button>
+          </div>
+          <p class="inline-status" id="quote-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home" aria-label="SJ Stance Custom Wheels home">
+            <span class="brand-mark">SJ</span><span class="brand-name">stance</span>
+            <span class="brand-subtitle">CUSTOM WHEELS</span>
+          </a>
+          <p>Premium custom wheels, expert fitment, and build-focused support.</p>
+          <div class="social-links" aria-label="Social links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+
+        <div>
+          <h2>Quick Links</h2>
+          <a href="#shop">Shop Wheels</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#visualizer">Visualizer</a>
+          <a href="#about">About Us</a>
+        </div>
+
+        <div>
+          <h2>Help And Info</h2>
+          <a href="#shop">Fitment Guide</a>
+          <a href="#quote">Shipping And Returns</a>
+          <a href="#quote">FAQ</a>
+          <a href="#quote">Warranty</a>
+        </div>
+
+        <div>
+          <h2>Contact Us</h2>
+          <p>(866) 555-7826</p>
+          <p>info@sjstancewheels.com</p>
+          <p>123 Performance Dr.<br>Irvine, CA 92614</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay" id="search-overlay" hidden>
+      <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title">
+        <div class="drawer-header">
+          <h2 id="search-title">Search SJ Stance</h2>
+          <button class="close-button" type="button" data-close-search aria-label="Close search">x</button>
+        </div>
+        <input id="global-search" type="search" placeholder="Search wheels, styles, gallery, visualizer">
+        <div class="search-results" id="search-results"></div>
+      </div>
+    </div>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+      <div class="drawer-header">
+        <h2 id="cart-title">Your Wheel Quote</h2>
+        <button class="close-button" type="button" id="cart-close" aria-label="Close cart">x</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer">
+        <div class="subtotal-row">
+          <span>Estimated subtotal</span>
+          <strong id="cart-subtotal">$0</strong>
+        </div>
+        <a class="button button-primary" href="#quote-form" id="cart-quote-link">Build Quote</a>
+      </div>
+    </aside>
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+
+    <div class="overlay" id="product-modal" hidden>
+      <article class="product-modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-product-name">
+        <div class="drawer-header">
+          <h2 id="modal-product-name">Wheel Details</h2>
+          <button class="close-button" type="button" data-close-product aria-label="Close product details">x</button>
+        </div>
+        <div id="product-modal-body"></div>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
