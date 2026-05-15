@@ -18,8 +18,8 @@
   --text: #f6f7f8;
   --muted: #b8bcc4;
   --soft: #777e89;
-  --red: #ef101f;
-  --red-dark: #b40712;
+  --red: #14b8a6;
+  --red-dark: #0f766e;
   --steel: #9aa3ad;
   --focus: #ffffff;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
@@ -38,7 +38,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 20% 0%, rgba(239, 16, 31, 0.09), transparent 28rem),
+    radial-gradient(circle at 20% 0%, rgba(20, 184, 166, 0.1), transparent 28rem),
     linear-gradient(180deg, #050505 0%, #090a0c 52%, #050505 100%);
   color: var(--text);
   font-family:
@@ -215,13 +215,13 @@ img {
 }
 
 .button-primary {
-  background: linear-gradient(180deg, var(--red), #d70917);
+  background: linear-gradient(180deg, var(--red), #0d9488);
   color: white;
-  box-shadow: 0 16px 36px rgba(239, 16, 31, 0.18);
+  box-shadow: 0 16px 36px rgba(20, 184, 166, 0.2);
 }
 
 .button-primary:hover {
-  background: linear-gradient(180deg, #ff1726, var(--red-dark));
+  background: linear-gradient(180deg, #2dd4bf, var(--red-dark));
 }
 
 .button-secondary {
@@ -552,7 +552,7 @@ img {
 
 .style-card:hover,
 .style-card.is-active {
-  border-color: rgba(239, 16, 31, 0.8);
+  border-color: rgba(20, 184, 166, 0.82);
   background: #15171a;
   transform: translateY(-2px);
 }
@@ -700,7 +700,7 @@ img {
 
 .tool-button.is-active {
   border-color: var(--red);
-  background: rgba(239, 16, 31, 0.18);
+  background: rgba(20, 184, 166, 0.18);
 }
 
 .wheel-picker {
@@ -742,7 +742,7 @@ img {
 
 .wheel-option.is-active {
   border-color: var(--red);
-  box-shadow: 0 0 0 2px rgba(239, 16, 31, 0.3);
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.32);
 }
 
 .visualizer-copy h2 {
@@ -866,7 +866,7 @@ img {
   width: 42px;
   height: 42px;
   margin-bottom: 16px;
-  border: 1px solid rgba(239, 16, 31, 0.72);
+  border: 1px solid rgba(20, 184, 166, 0.72);
   border-radius: 50%;
   color: var(--red);
   font-size: 0.82rem;
@@ -899,7 +899,7 @@ img {
   width: max-content;
   padding: 3px 9px;
   border-radius: 999px;
-  background: rgba(239, 16, 31, 0.14);
+  background: rgba(20, 184, 166, 0.15);
   color: var(--red);
   font-size: 0.82rem;
   font-weight: 950;

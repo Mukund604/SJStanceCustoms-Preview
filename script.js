@@ -520,7 +520,7 @@ function drawVisualizer() {
   );
 
   visualizerContext.save();
-  visualizerContext.fillStyle = "rgba(239, 16, 31, 0.9)";
+  visualizerContext.fillStyle = "rgba(20, 184, 166, 0.92)";
   visualizerContext.strokeStyle = "rgba(255, 255, 255, 0.8)";
   ["front", "rear"].forEach((key) => {
     const point = visualizerState[key];
